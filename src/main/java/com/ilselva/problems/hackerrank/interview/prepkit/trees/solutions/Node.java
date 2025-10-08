@@ -11,6 +11,12 @@ public class Node {
         right = null;
     }
 
+    Node() {
+        data = -1;
+        left = null;
+        right = null;
+    }
+
     public static Node insert(Node root, int data) {
         if (root == null) {
             return new Node(data);
