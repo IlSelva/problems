@@ -16,20 +16,15 @@ public class HuffmanDecoding {
      */
     static String decode(String s, Node root) {
 
-        int i = 0;
         Node curr = root;
         StringBuilder decoded = new StringBuilder();
-        while (i < s.length()) {
-            while (!(curr instanceof HuffmanLeaf)) {
-                if (s.charAt(i) == '0') {
-                    curr = curr.left;
-                } else {
-                    curr = curr.right;
-                }
-                i++;
+        for (int i = 0; i < s.length(); i++) {
+            curr = s.charAt(i) == '0' ? curr.left : curr.right;
+
+            if (curr instanceof HuffmanLeaf) {
+                decoded.append(curr.data);
+                curr = root;
             }
-            decoded.append(curr.data);
-            curr = root;
         }
 
         return decoded.toString();
