@@ -28,3 +28,4 @@ replay_pid*
 .idea/*
 *.iml
 /src/test/resources/*
+/src/main/java/com/ilselva/problems/interviews/
