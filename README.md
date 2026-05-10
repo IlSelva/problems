@@ -12,3 +12,15 @@ A collection of solutions to competitive programming and coding interview proble
 
 - `src/test/resources/`
   Contains input sets for some tests; other inputs are included directly in the test code.
+
+## Running Tests
+
+By default, tests under the `kattis` and `hackerrank` packages require input files to be present to run correctly. for that reason they are excluded from the default test suite.
+
+To run the default test suite:
+
+`mvn test`
+
+To run all tests use the `all-tests` Maven profile:
+
+`mvn test -Pall-tests`
