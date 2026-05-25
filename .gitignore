@@ -29,3 +29,5 @@ replay_pid*
 *.iml
 /src/test/resources/*
 /src/main/java/com/ilselva/problems/interviews/
+/src/test/java/com/ilselva/problems/interviews/
+/.junie/
